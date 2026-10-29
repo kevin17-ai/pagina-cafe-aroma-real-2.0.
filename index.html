@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce los productos de Café Aroma Real, un emprendimiento escolar de Santa Isabel, Tolima.">
+  <meta name="theme-color" content="#2b1a12">
+  <title>Café Aroma Real | Tienda de café</title>
+  <style>
+    :root{--espresso:#24150f;--coffee:#4b2d20;--roast:#70452f;--cream:#fbf6ee;--paper:#fffdf9;--gold:#c99a4a;--muted:#786c62;--green:#385b43;--line:#eadfce;--shadow:0 18px 45px rgba(43,26,18,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--espresso);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}img{display:block;max-width:100%}a{color:inherit}button{font:inherit;cursor:pointer}.container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+    .topline{background:var(--espresso);color:#f6e7d0;text-align:center;padding:8px 15px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+    .site-header{position:sticky;top:0;z-index:20;background:rgba(255,253,249,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(234,223,206,.85)}.nav-wrap{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none}.brand-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:var(--coffee);color:#f7e4c4;font-size:23px}.brand-name{display:block;font-family:Georgia,serif;font-size:1.15rem;font-weight:700;line-height:1.15;letter-spacing:.01em}.brand-sub{display:block;color:var(--muted);font-size:.68rem;letter-spacing:.17em;text-transform:uppercase;margin-top:4px}.nav-links{display:flex;align-items:center;gap:25px}.nav-links a{text-decoration:none;font-size:.9rem;color:#49372c}.nav-links a:hover{color:var(--roast)}.cart-button{border:0;border-radius:999px;background:var(--coffee);color:white;padding:11px 16px;display:flex;align-items:center;gap:9px;font-weight:650}.cart-count{background:var(--gold);color:var(--espresso);border-radius:50%;min-width:23px;height:23px;display:grid;place-items:center;font-size:.78rem}
+    .hero{position:relative;isolation:isolate;overflow:hidden;min-height:560px;display:flex;align-items:center;color:white;background:#2b1a12}.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(27,16,11,.94) 0%,rgba(39,23,15,.83) 43%,rgba(39,23,15,.2) 100%),url('images/hero.svg') center 52%/cover no-repeat}.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 78% 35%,rgba(201,154,74,.17),transparent 38%)}.hero-content{padding:80px 0 86px;max-width:650px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:#f0d6a6;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.eyebrow::before{content:"";width:30px;height:1px;background:var(--gold)}h1,h2,h3,p{margin-top:0}.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3rem,7vw,5.6rem);font-weight:500;line-height:.99;letter-spacing:-.045em;margin:22px 0}.hero h1 em{font-weight:400;color:#e0b76e}.hero-copy{max-width:500px;color:#eee1d2;font-size:1.08rem}.hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:13px 21px;text-decoration:none;font-weight:700;border:1px solid transparent;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px)}.button-gold{background:var(--gold);color:#21140e}.button-outline{border-color:rgba(255,255,255,.55);color:white;background:rgba(255,255,255,.04)}.hero-note{margin-top:32px;color:#e8d7c4;font-size:.83rem;display:flex;align-items:center;gap:10px}.hero-note span{color:#e2b86e;font-size:1.15rem}
+    .trust-strip{background:var(--paper);border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:23px 0;gap:20px}.trust-item{display:flex;align-items:center;justify-content:center;gap:12px;text-align:left}.trust-icon{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--roast);font-size:1.15rem}.trust-item strong{display:block;font-size:.88rem}.trust-item small{display:block;color:var(--muted);font-size:.76rem}
+    section.section{padding:88px 0}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}.section-kicker{color:var(--roast);font-size:.75rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px}.section-heading h2,.story h2{font-family:Georgia,serif;font-size:clamp(2.1rem,4vw,3.2rem);font-weight:500;letter-spacing:-.035em;line-height:1.1;margin-bottom:0}.section-heading p{max-width:420px;color:var(--muted);margin-bottom:4px;font-size:.94rem}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.product-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}.product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.product-photo{height:235px;position:relative;overflow:hidden;background:#e7d7c4}.product-photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.product-card:hover .product-photo img{transform:scale(1.045)}.product-tag{position:absolute;left:14px;top:14px;background:rgba(255,253,249,.94);color:var(--coffee);padding:6px 10px;border-radius:999px;font-size:.68rem;font-weight:800;letter-spacing:.05em}.product-info{padding:19px;display:flex;flex-direction:column;flex:1}.product-info h3{font-family:Georgia,serif;font-size:1.28rem;font-weight:600;margin-bottom:8px}.product-info p{color:var(--muted);font-size:.85rem;min-height:67px;margin-bottom:15px}.product-bottom{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}.price{font-size:1.08rem;font-weight:800;color:var(--green)}.unit{display:block;font-size:.68rem;font-weight:500;color:var(--muted)}.add-button{border:0;background:var(--coffee);color:white;border-radius:50%;width:42px;height:42px;font-size:1.3rem;display:grid;place-items:center;transition:background .2s}.add-button:hover{background:var(--green)}.catalog-note{margin-top:18px;font-size:.78rem;color:var(--muted)}
+    .story-section{background:#efe5d7}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.story-image{min-height:440px;border-radius:20px;overflow:hidden;position:relative;background:#d5c1a6}.story-image img{width:100%;height:100%;min-height:440px;object-fit:cover}.story-image-label{position:absolute;bottom:20px;left:20px;right:20px;background:rgba(36,21,15,.86);color:#fff;padding:17px 20px;border-radius:12px;font-family:Georgia,serif;font-size:1.1rem}.story h2{margin-bottom:20px}.story p{color:#625246}.story-points{list-style:none;padding:0;margin:25px 0 0;display:grid;gap:15px}.story-points li{display:flex;gap:12px;align-items:flex-start}.check{color:var(--green);font-weight:900}.story-points strong{display:block;font-size:.92rem}.story-points small{color:var(--muted)}
+    .contact-band{padding:64px 0;background:var(--coffee);color:white}.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.contact-band h2{font-family:Georgia,serif;font-size:clamp(1.8rem,4vw,2.7rem);font-weight:500;margin-bottom:8px}.contact-band p{margin-bottom:0;color:#e7d7c6}.contact-band .button{white-space:nowrap}
+    footer{background:var(--espresso);color:#f6e9d9;padding:36px 0 25px}.footer-main{display:flex;justify-content:space-between;gap:30px;align-items:flex-start;padding-bottom:25px;border-bottom:1px solid rgba(255,255,255,.14)}.footer-brand{font-family:Georgia,serif;font-size:1.4rem}.footer-copy{max-width:480px;color:#cbb9a7;font-size:.82rem;margin-top:9px}.footer-meta{text-align:right;color:#cbb9a7;font-size:.8rem}.copyright{padding-top:18px;color:#a99683;font-size:.72rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--espresso);color:white;padding:12px 18px;border-radius:999px;box-shadow:var(--shadow);z-index:60;transition:opacity .2s,transform .2s;font-size:.88rem}.toast.show{opacity:1;transform:translate(-50%,0)}.cart-panel{position:fixed;inset:0;z-index:50;background:rgba(20,12,8,.55);display:none;justify-content:flex-end}.cart-panel.open{display:flex}.cart-drawer{background:var(--paper);height:100%;width:min(440px,100%);padding:26px;overflow:auto;box-shadow:-20px 0 50px #0002}.drawer-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:15px}.drawer-head h2{font-family:Georgia,serif;font-size:1.8rem;margin:0}.close-button{border:1px solid var(--line);background:white;border-radius:50%;width:38px;height:38px;font-size:1.2rem}.cart-empty{padding:40px 0;text-align:center;color:var(--muted)}.cart-line{display:grid;grid-template-columns:1fr auto;gap:12px;padding:17px 0;border-bottom:1px solid var(--line)}.cart-line strong{display:block}.cart-line small{color:var(--muted)}.quantity{display:flex;align-items:center;gap:9px}.quantity button{width:27px;height:27px;border:1px solid var(--line);background:white;border-radius:50%}.cart-total{display:flex;justify-content:space-between;font-weight:800;font-size:1.1rem;padding:22px 0}.order-note{font-size:.78rem;color:var(--muted);line-height:1.5}.checkout-button{width:100%;border:0;background:var(--green);color:white;padding:14px;border-radius:999px;font-weight:800;margin-top:10px}.checkout-button:disabled{opacity:.45;cursor:not-allowed}
+    @media(max-width:950px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{min-height:510px}.story-grid{gap:35px}.product-photo{height:260px}}
+    @media(max-width:650px){.container{width:min(100% - 28px,1160px)}.nav-wrap{min-height:70px;flex-wrap:wrap;padding:12px 0}.nav-links{order:3;width:100%;justify-content:space-between;gap:8px;padding-bottom:5px}.nav-links a{font-size:.82rem}.brand-name{font-size:1rem}.brand-sub{font-size:.6rem}.cart-button{padding:9px 12px;font-size:.83rem}.hero{min-height:530px}.hero::before{background:linear-gradient(90deg,rgba(27,16,11,.92),rgba(39,23,15,.6)),url('images/hero.svg') center/cover}.hero-content{padding:70px 0}.hero h1{font-size:clamp(3rem,14vw,4.5rem)}.trust-grid{grid-template-columns:1fr;padding:18px 0;gap:15px}.trust-item{justify-content:flex-start}.section.section{padding:60px 0}.section-heading{display:block}.section-heading p{margin-top:14px}.product-grid{gap:12px}.product-photo{height:185px}.product-info{padding:13px}.product-info h3{font-size:1.08rem}.product-info p{font-size:.8rem;min-height:85px}.price{font-size:.94rem}.add-button{width:36px;height:36px}.story-grid{grid-template-columns:1fr;gap:30px}.story-image,.story-image img{min-height:310px}.contact-inner{display:block}.contact-band .button{margin-top:22px}.footer-main{display:block}.footer-meta{text-align:left;margin-top:22px}.copyright{display:block}.copyright span{display:block;margin-top:6px}}
+    @media(max-width:380px){.product-grid{grid-template-columns:1fr}.product-photo{height:230px}.product-info p{min-height:0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="topline">Emprendimiento escolar · Santa Isabel, Tolima</div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Café Aroma Real, inicio"><span class="brand-mark" aria-hidden="true">☕</span><span><span class="brand-name">Café Aroma Real</span><span class="brand-sub">Origen · Sabor · Tradición</span></span></a>
+      <nav class="nav-links" aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#tienda">Tienda</a><a href="#historia">Nuestra esencia</a></nav>
+      <button class="cart-button" id="openCart" type="button" aria-label="Abrir pedido">Mi pedido <span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container"><div class="hero-content">
+        <div class="eyebrow">El aroma de nuestra tierra</div>
+        <h1>Un buen café.<br><em>Una gran historia.</em></h1>
+        <p class="hero-copy">Descubre la propuesta de Café Aroma Real: productos seleccionados, presentaciones cuidadas y el sabor que inspira nuestro emprendimiento en Santa Isabel.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#tienda">Explorar productos <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#historia">Conocer el proyecto</a></div>
+        <div class="hero-note"><span aria-hidden="true">✦</span> Una propuesta local creada con dedicación.</div>
+      </div></div>
+    </section>
+
+    <div class="trust-strip"><div class="container trust-grid">
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">✦</span><span><strong>Presentación cuidada</strong><small>Detalles que cuentan una historia</small></span></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">♧</span><span><strong>Identidad local</strong><small>Un proyecto de Santa Isabel</small></span></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">♡</span><span><strong>Atención cercana</strong><small>Hecho con compromiso y respeto</small></span></div>
+    </div></div>
+
+    <section class="section" id="tienda"><div class="container">
+      <div class="section-heading"><div><div class="section-kicker">Nuestra selección</div><h2>Productos con carácter</h2></div><p>Conoce las presentaciones de nuestro catálogo. Añade productos a tu pedido de demostración para probar cómo funciona la tienda.</p></div>
+      <div class="product-grid">
+        <article class="product-card" data-id="cafe-libra" data-name="Café empaquetado · una libra" data-price="27000">
+          <div class="product-photo"><img src="images/cafe-libra.svg" alt="Granos de café tostado en una presentación de estilo artesanal" loading="lazy"><span class="product-tag">CATÁLOGO</span></div>
+          <div class="product-info"><h3>Café empaquetado</h3><p>Presentación de una libra para quienes quieren tener café en casa y disfrutarlo a su manera.</p><div class="product-bottom"><span class="price">$27.000 <span class="unit">por libra</span></span><button class="add-button" type="button" aria-label="Agregar café de una libra" title="Agregar al pedido">+</button></div></div>
+        </article>
+        <article class="product-card" data-id="cafe-media" data-name="Café empaquetado · media libra" data-price="24000">
+          <div class="product-photo"><img src="images/cafe-media.svg" alt="Café recién tostado y preparado en un ambiente cálido" loading="lazy"><span class="product-tag">PARA DISFRUTAR</span></div>
+          <div class="product-info"><h3>Café empaquetado</h3><p>Una presentación de media libra, práctica para guardar y compartir en casa.</p><div class="product-bottom"><span class="price">$24.000 <span class="unit">por media libra</span></span><button class="add-button" type="button" aria-label="Agregar café de media libra" title="Agregar al pedido">+</button></div></div>
+        </article>
+        <article class="product-card" data-id="mani" data-name="Maní" data-price="8000">
+          <div class="product-photo"><img src="images/mani.svg" alt="Maní tostado servido en un recipiente, sin pulpa de café" loading="lazy"><span class="product-tag">DIFERENTE</span></div>
+          <div class="product-info"><h3>Maní</h3><p>Maní para disfrutar como producto complementario de Café Aroma Real.</p><div class="product-bottom"><span class="price">$8.000 <span class="unit">por unidad</span></span><button class="add-button" type="button" aria-label="Agregar maní" title="Agregar al pedido">+</button></div></div>
+        </article>
+        <article class="product-card" data-id="arequipe" data-name="Arequipe de café · 200 g" data-price="7000">
+          <div class="product-photo"><img src="images/arequipe.svg" alt="Postre artesanal de tonos caramelo presentado para servir" loading="lazy"><span class="product-tag">DULCE TOQUE</span></div>
+          <div class="product-info"><h3>Arequipe de café</h3><p>Un producto dulce complementario, presentado en envase de 200 gramos.</p><div class="product-bottom"><span class="price">$7.000 <span class="unit">envase de 200 g</span></span><button class="add-button" type="button" aria-label="Agregar arequipe de café" title="Agregar al pedido">+</button></div></div>
+        </article>
+      </div>
+      <p class="catalog-note">* Catálogo académico de demostración. Las ilustraciones son referenciales; la presentación real puede variar. Los precios corresponden a los registrados en esta versión de la página.</p>
+    </div></section>
+
+    <section class="story-section" id="historia"><div class="container story-grid">
+      <div class="story-image"><img src="images/story.svg" alt="Café servido en una mesa de madera, con luz natural" loading="lazy"><div class="story-image-label">El sabor comienza con una buena idea.</div></div>
+      <div class="story"><div class="section-kicker">Nuestra esencia</div><h2>Un proyecto que nace del gusto por el café.</h2><p>Café Aroma Real es un emprendimiento académico de grado décimo de la Institución Educativa Técnica Santa Isabel. Nuestra propuesta reúne café empaquetado y productos complementarios, con atención a la presentación, la calidad y la experiencia del cliente.</p><p>Queremos demostrar que una idea escolar puede presentarse con identidad visual, organización y una visión clara de sus productos.</p>
+        <ul class="story-points"><li><span class="check">✓</span><span><strong>Calidad y cuidado</strong><small>Atención a la materia prima, el empaque y la higiene.</small></span></li><li><span class="check">✓</span><span><strong>Responsabilidad</strong><small>Información clara y trato respetuoso al cliente.</small></span></li><li><span class="check">✓</span><span><strong>Trabajo en equipo</strong><small>Una propuesta construida como parte de la feria empresarial.</small></span></li></ul>
+      </div>
+    </div></section>
+
+    <section class="contact-band"><div class="container contact-inner"><div><h2>Conoce Café Aroma Real</h2><p>Visítanos en el espacio asignado durante la feria empresarial de la Institución Educativa Técnica Santa Isabel.</p></div><a class="button button-gold" href="#tienda">Ver el catálogo <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer><div class="container"><div class="footer-main"><div><div class="footer-brand">Café Aroma Real</div><p class="footer-copy">Un emprendimiento escolar que combina café, creatividad y presentación cuidada. Proyecto académico de grado décimo, Santa Isabel, Tolima.</p></div><div class="footer-meta"><strong>Institución Educativa Técnica Santa Isabel</strong><br>Feria empresarial · 2026<br><span>Integrantes del proyecto</span></div></div><div class="copyright"><span>© 2026 Café Aroma Real · Proyecto académico</span><span>Esta página es una demostración de catálogo; no procesa pagos reales.</span></div></div></footer>
+
+  <div class="cart-panel" id="cartPanel" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="cart-drawer"><div class="drawer-head"><h2 id="cartTitle">Tu pedido</h2><button class="close-button" id="closeCart" type="button" aria-label="Cerrar pedido">×</button></div><div id="cartItems"><p class="cart-empty">Tu pedido está vacío. Agrega algún producto del catálogo.</p></div><div class="cart-total"><span>Total estimado</span><span id="cartTotal">$0</span></div><p class="order-note">Esta función es solo una demostración para la exposición. No envía pedidos ni realiza pagos.</p><button class="checkout-button" id="finishOrder" type="button" disabled>Finalizar demostración</button></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    // El carrito vive en la memoria de esta página: no envía datos ni cobra dinero.
+    const cart = new Map();
+    const cartPanel = document.getElementById('cartPanel');
+    const cartCount = document.getElementById('cartCount');
+    const cartItems = document.getElementById('cartItems');
+    const cartTotal = document.getElementById('cartTotal');
+    const finishOrder = document.getElementById('finishOrder');
+    const toast = document.getElementById('toast');
+    let toastTimer;
+    const money = value => new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(value);
+
+    document.querySelectorAll('.product-card').forEach(card => {
+      card.querySelector('.add-button').addEventListener('click', () => {
+        const id = card.dataset.id;
+        const current = cart.get(id) || {name:card.dataset.name,price:Number(card.dataset.price),quantity:0};
+        current.quantity += 1;
+        cart.set(id,current);
+        renderCart();
+        showToast('Producto agregado al pedido de demostración');
+      });
+    });
+    function renderCart(){
+      let units=0,total=0;
+      cart.forEach(item=>{units+=item.quantity;total+=item.price*item.quantity;});
+      cartCount.textContent=units;
+      cartTotal.textContent=money(total);
+      finishOrder.disabled=units===0;
+      if(cart.size===0){cartItems.innerHTML='<p class="cart-empty">Tu pedido está vacío. Agrega algún producto del catálogo.</p>';return;}
+      cartItems.innerHTML='';
+      cart.forEach((item,id)=>{
+        const line=document.createElement('div');line.className='cart-line';
+        const info=document.createElement('div');const name=document.createElement('strong');name.textContent=item.name;const price=document.createElement('small');price.textContent=money(item.price)+' por unidad';info.append(name,price);
+        const controls=document.createElement('div');controls.className='quantity';
+        const minus=document.createElement('button');minus.type='button';minus.textContent='−';minus.setAttribute('aria-label','Quitar una unidad');minus.addEventListener('click',()=>changeQuantity(id,-1));
+        const qty=document.createElement('span');qty.textContent=item.quantity;
+        const plus=document.createElement('button');plus.type='button';plus.textContent='+';plus.setAttribute('aria-label','Agregar una unidad');plus.addEventListener('click',()=>changeQuantity(id,1));
+        controls.append(minus,qty,plus);line.append(info,controls);cartItems.append(line);
+      });
+    }
+    function changeQuantity(id,amount){const item=cart.get(id);if(!item)return;item.quantity+=amount;if(item.quantity<=0)cart.delete(id);renderCart();}
+    function showToast(message){toast.textContent=message;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),2400);}
+    document.getElementById('openCart').addEventListener('click',()=>{cartPanel.classList.add('open');document.getElementById('closeCart').focus();});
+    document.getElementById('closeCart').addEventListener('click',()=>cartPanel.classList.remove('open'));
+    cartPanel.addEventListener('click',event=>{if(event.target===cartPanel)cartPanel.classList.remove('open');});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape')cartPanel.classList.remove('open');});
+    finishOrder.addEventListener('click',()=>{showToast('Demostración completada: no se envió ningún pedido');cartPanel.classList.remove('open');});
+  </script>
+</body>
+</html>
